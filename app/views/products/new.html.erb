@@ -1,0 +1,9 @@
+<%= form_for @product do |f| %>
+    <%= f.label :name %>
+    <div data-controller="autocomplete">
+      <div data-autocomplete-target="root"></div>
+      <%= f.hidden_field :name, as: :hidden, data: { target: 'autocomplete.selected-option' } %>
+    </div>
+    <br>
+    <%= f.submit class: 'btn' %>
+<% end %>
