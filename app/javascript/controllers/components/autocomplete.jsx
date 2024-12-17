@@ -30,6 +30,7 @@ const Autocomplete = ({ value: valueProp, onSelected }) => {
 
   return (
     <AntdAutoComplete
+      placeholder="control mode"
       value={value}
       options={options}
       style={{
@@ -38,7 +39,6 @@ const Autocomplete = ({ value: valueProp, onSelected }) => {
       onSelect={onSelect}
       onSearch={(text) => setOptions(getPanelValue(text))}
       onChange={onChange}
-      placeholder="control mode"
     />
   );
 };

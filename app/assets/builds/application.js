@@ -42211,6 +42211,7 @@ var init_autocomplete = __esm({
       return /* @__PURE__ */ import_react39.default.createElement(
         auto_complete_default,
         {
+          placeholder: "control mode",
           value,
           options,
           style: {
@@ -42218,8 +42219,7 @@ var init_autocomplete = __esm({
           },
           onSelect,
           onSearch: (text) => setOptions(getPanelValue(text)),
-          onChange,
-          placeholder: "control mode"
+          onChange
         }
       );
     };
